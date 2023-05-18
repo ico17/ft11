@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1479.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.futbol11.HelloController">
+   <children>
+      <ImageView fx:id="white_background" fitHeight="212.0" fitWidth="332.0" layoutX="923.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@questionPic.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="choice_box1" disable="true" layoutX="202.0" layoutY="166.0" prefHeight="43.0" prefWidth="150.0" />
+      <Label fx:id="selection" layoutX="80.0" layoutY="34.0" prefHeight="77.0" prefWidth="778.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choice_box2" disable="true" layoutX="421.0" layoutY="163.0" prefHeight="51.0" prefWidth="150.0" />
+      <Button fx:id="btnGenerate" layoutX="34.0" layoutY="188.0" mnemonicParsing="false" onAction="#generate_player" prefHeight="283.0" prefWidth="140.0" style="-fx-background-color: #008b8b;" stylesheets="@effect2.css" text="ГЕНЕРИРАЙ" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Button>
+      <Button fx:id="btnCheck" disable="true" layoutX="637.0" layoutY="163.0" mnemonicParsing="false" onAction="#check" prefHeight="51.0" prefWidth="103.0" style="-fx-background-color: #008b8b;" text="ПРОВЕРИ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Slider fx:id="slider" layoutX="426.0" layoutY="157.0" max="40.0" min="16.0" value="28.0" visible="false" />
+      <Label fx:id="lbl_slider" layoutX="460.0" layoutY="104.0" prefHeight="35.0" prefWidth="72.0" visible="false">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtGuess" disable="true" layoutX="229.0" layoutY="544.0" style="-fx-background-color: #fff;">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></TextField>
+      <Button fx:id="btnGuess" disable="true" layoutX="474.0" layoutY="539.0" mnemonicParsing="false" onAction="#guess" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #008b8b;" text="ПОЗНАЙ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Slider fx:id="height_slider" layoutX="421.0" layoutY="150.0" max="200.0" min="160.0" value="180.0" visible="false" />
+      <Label fx:id="lbl_height" layoutX="451.0" layoutY="72.0" prefHeight="64.0" prefWidth="72.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="lives" fitHeight="177.0" fitWidth="511.0" layoutX="876.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3balls.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="league" fitHeight="77.0" fitWidth="56.0" layoutX="974.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="name_lbl" layoutX="931.0" layoutY="329.0" prefHeight="43.0" prefWidth="312.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="202.0" layoutY="232.0" prefHeight="277.0" prefWidth="545.0" style="-fx-border-color: white;">
+         <children>
+            <Label fx:id="lbl1" layoutX="70.0" layoutY="47.0" prefHeight="17.0" prefWidth="332.0" text="H">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl2" layoutX="70.0" layoutY="77.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl3" layoutX="70.0" layoutY="101.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl6" layoutX="70.0" layoutY="154.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl5" layoutX="70.0" layoutY="131.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl4" layoutX="70.0" layoutY="115.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl7" layoutX="70.0" layoutY="177.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl8" layoutX="70.0" layoutY="194.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl9" layoutX="70.0" layoutY="211.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+            <Label fx:id="lbl10" layoutX="70.0" layoutY="228.0" prefHeight="17.0" prefWidth="332.0" text="H" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="image" fitHeight="212.0" fitWidth="214.0" layoutX="1001.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
